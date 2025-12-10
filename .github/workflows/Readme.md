@@ -1,2 +1,1 @@
-
-[![Actions Status]](https://github.com/DanilChyksin/ci/actions)
+[![start-project](https://github.com/DanilChyksin/hexlet-ci-app/actions/workflows/start_project.yml/badge.svg)](https://github.com/DanilChyksin/hexlet-ci-app/actions/workflows/start_project.yml)
