@@ -1,28 +1,11 @@
-# file: .github/workflows/show-directory.yml
-name: start_project
-# on – определяет события, которые запускают воркфлоу
+name: start-project
 on: push
-jobs:
-  # build – произвольно выбранное имя задания
-  # их может быть больше одного
+jobs: 
   build:
-    # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
-    steps:
+    steps: 
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with:
-          node-version: '18.x'
-          cache: 'npm' # ускоряет повторные сборки
-      - run: make setup
+      - run: make setup 
       - run: make test
       - run: make lint
-  helloy_form_hexlet:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        id: checkout
-        uses: actions/checkout@v4
-
-      - name: Print Hello from Hexlet
-      - uses: hexlet-components/hello-from-hexlet-action@release  
